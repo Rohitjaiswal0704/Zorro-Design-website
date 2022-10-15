@@ -1,0 +1,2067 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+#main{
+    width: 100vw;
+    min-height: 100vh;    
+}
+::-webkit-scrollbar{
+    width: 6px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: red;
+    border-radius: 2vw;
+   
+}
+::-webkit-scrollbar-track{
+    background-color: black;
+}
+#page1{
+    width: 100vw;
+    height: 150vh;
+    position: relative;
+    overflow: hidden;
+    background-color: black;
+
+}
+#navbar{
+    width: 99.55vw;
+    height: 13vh;
+    padding: 0 0 0 1vw;
+    display: flex;
+    position: fixed;
+    z-index: 999;
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+     
+}
+#navbar img{
+    width: 4vw;
+    cursor: pointer;
+}
+
+#navbar_left{
+    width: 24vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* background-color: yellow; */
+}
+
+#navbar_left h1{
+    font-family: Nuckle, sans-serif;
+    Font-size: 1.7vmax;
+    Font-weight: 500;
+    Line-height: 4vw;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+}
+
+#navbar_left i{
+    font-size: 2.4vmax;
+    color: white;
+    cursor: pointer;
+}
+
+/* ------------page1_text------------- */
+#page1_text{
+    width: 65vw;
+    height: 65vh;
+    position: absolute;
+    top: 10vw;
+    /* background-color: blue; */
+    padding-left: 6vw;
+}
+
+#page1_text h1{
+  
+   font-family: Lostamasta, sans-serif;
+   Font-size: 7vmax;
+   Font-weight: 500;
+   Line-height: 7vmax;
+   letter-spacing: -0.4vw;
+   color: rgb(255, 255, 255);
+}
+#page1_text>h2{
+    font-family:cursive;
+    Font-size: 7vmax;
+    Font-weight: 500;
+    Line-height: 8vmax;
+    color: rgb(255, 255, 255);
+ }
+ #page1_text>button{
+      padding: 0.7vw 3vw;
+      font-family:gilroy;
+      font-size: 1vmax;
+      font-weight: 600;
+      border: none;
+      margin-top: 2vw;
+      cursor: pointer;
+      border-radius: 5vw;
+      outline: 0.2vw solid  white;
+ }
+
+ /* ---------------------page1-image-move------------------------- */
+
+#page1-image-move{
+    width: 190vw;
+    height: 23vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y:hidden;
+    overflow-x: scroll;
+    margin-top: 30vh;
+    position: absolute;
+    top: 47%;
+    white-space: nowrap;
+    background-color: black;
+    transform: perspective(2000px) rotateY(65deg);
+}
+
+#page1-image-move::-webkit-scrollbar{
+    display: none;
+}
+
+#page1-image-move img{
+    width: 100vw;
+    height: 26vh;
+    margin-right: 15px;
+    display: inline-block;
+    animation: move 11s linear infinite both;
+
+}
+
+@keyframes move {
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-360%);
+    }
+}
+
+/* --------------------page2---------------------- */
+#page2{
+    width: 100vw;
+    height: 135vh;
+    background-color: black;
+}
+#page2>h1{
+    width: 78vw;
+    font-size: 2.7vmax;
+    margin-left: 10vw;
+    color: white;
+  font-family: gilroy;
+  font-weight: 500;
+  /* background-color: aqua; */
+}
+
+/* ---------------page2_box2----------------- */
+#page2_box2{
+    width: 55vw;
+    margin: 8vw 0 0 35vw ;
+    color: white;
+}
+#page2_box2>h2{
+    font-family: gilroy;
+    font-size: 1.7vw;
+    font-weight: 400;
+    line-height: 2vw;
+}
+#page2_box2>button{
+    padding: 0.9vw 3.7vw;
+    font-size: gilroy;
+    font-weight: 700;
+    border-radius: 5vw;
+    margin: 2vw 0 0 0;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2vmax;
+}
+
+#page2 #line{
+    width: 100vw;
+    height: 0.3vh;
+    margin-top: 23vh;
+    border-bottom: none;
+    background-color: rgb(114, 114, 114);
+}
+
+/* ---------------page2_box3----------------- */
+#page2_box3{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 60vh;
+    background-color: black;
+    margin-top: 0.1vw;
+}
+#page2_box3>h1{
+    margin-top: 4vw;
+    font-family: 'Cardo', serif;
+    font-size: 4.5vmax;
+    color: white;
+}
+#page2_box3>h3{
+    width: 37vw;
+    margin-top: 2vw;
+    font-family: gilroy;
+    font-size: 1.5vmax;
+    font-weight: 100;
+    color: white;
+    text-align: center;
+    
+}
+#page2_box3>button{
+    padding: 0.9vw 3.5vw;
+    font-family: gilroy;
+    font-size: 1.3vmax;
+    font-weight: 700;
+    letter-spacing: 0.1vw;
+    border-radius: 5vw;
+    border: none;
+    cursor: pointer;
+    margin-top: 2.5vw;
+}
+
+/*-------------------------page3----------------------*/
+#page3{
+    width: 100vw;
+    height: 140vh;
+    display: flex;
+}
+
+/*--------------------------------box1-----------------------------*/
+#page3_box1{
+    width: 33.3vw;
+    height: 140vh;
+    overflow: hidden;
+    position: relative;
+    border-top: 0.1vw solid slategray;
+    border-right: 0.07vw solid rgb(103, 105, 107);
+    border-bottom: 0.1vw solid slategray;
+    background-color: black;
+    cursor: pointer;
+}
+#page3_box1_top{
+    width: 33.3vw;
+    height: 70vh;
+    transform: translateY(-100%);
+    transition: 0.3s linear;
+    position: relative;
+    background-color: white;
+    z-index: 1;
+}
+ #page3_box1_bottom{
+    width: 33.3vw;
+    height: 70vh;
+    transform: translateY(100%);
+    transition: 0.3s linear;
+    position: relative;
+    background-color: white;
+    z-index: 1;
+}
+
+/*--------------page3_box1_center-----------------*/
+
+#page3_box1_center{
+    width: 33.3vw;
+    height: 30vh;
+    z-index: 100;
+    top: 40%;
+    position: absolute;
+    padding-left: 1vw;
+    color: white;
+}
+
+#page3_box1_center>h1{
+    font-family: gilroy;
+    font-size: 2.2vmax;
+    font-weight: 400;   
+}
+
+#page3_box1_text1{
+    display: flex;
+    background-color: transparent;
+    justify-content:flex-start;
+    align-items: center;
+    gap: 2vw;
+    /* color: white; */
+}
+#page3_box1_text1>h3{
+    font-family: gilroy;
+    font-size: 1.3vw;
+    font-weight: 100;
+    width: 23vw;
+    background-color: transparent;
+    /* color: white; */
+}
+#page3_box1_text1>button{
+    width: 4vw;
+    height: 4vw;
+    border-radius: 50%;
+    outline: 0.2vw solid white;
+    background-color: transparent;
+}
+#page3_box1_text1>button>i{
+    font-size: 2vmax;
+    color: white;
+}
+
+
+
+/*--------------------------------box2-----------------------------*/
+#page3_box2{
+    width: 33.3vw;
+    height: 140vh;
+    overflow: hidden;
+    position: relative;
+    border-top: 0.1vw solid slategray;
+    border-right: 0.07vw solid rgb(103, 105, 107);
+    border-bottom: 0.1vw solid slategray;
+    background-color: black;
+    cursor: pointer;
+}
+#page3_box2_top{
+    width: 33.3vw;
+    height: 70vh;
+    transform: translateY(-100%);
+    transition: 0.3s linear;
+    position: relative;
+    background-color: white;
+    z-index: 1;
+}
+ #page3_box2_bottom{
+    width: 33.3vw;
+    height: 70vh;
+    transform: translateY(100%);
+    transition: 0.3s linear;
+    position: relative;
+    background-color: white;
+    z-index: 1;
+}
+
+/*--------------page3_box2_center-----------------*/
+
+#page3_box2_center{
+    width: 33.3vw;
+    height: 30vh;
+    z-index: 100;
+    top: 40%;
+    position: absolute;
+    padding-left: 1vw;
+    color: white;
+}
+
+#page3_box2_center>h1{
+    font-family: gilroy;
+    font-size: 2.2vmax;
+    font-weight: 400;   
+}
+
+#page3_box2_text1{
+    display: flex;
+    background-color: transparent;
+    justify-content:flex-start;
+    align-items: center;
+    gap: 2vw;
+    /* color: white; */
+}
+#page3_box2_text1>h3{
+    font-family: gilroy;
+    font-size: 1.3vw;
+    font-weight: 100;
+    width: 23vw;
+    background-color: transparent;
+    /* color: white; */
+}
+#page3_box2_text1>button{
+    width: 4vw;
+    height: 4vw;
+    border-radius: 50%;
+    outline: 0.2vw solid white;
+    background-color: transparent;
+}
+#page3_box2_text1>button>i{
+    font-size: 2vmax;
+    color: white;
+}
+
+
+
+
+
+/*--------------------------------box3-----------------------------*/
+#page3_box3{
+    width: 33.3vw;
+    height: 140vh;
+    overflow: hidden;
+    position: relative;
+    border-top: 0.1vw solid slategray;
+    border-right: 0.07vw solid rgb(103, 105, 107);
+    border-bottom: 0.1vw solid slategray;
+    background-color: black;
+    cursor: pointer;
+}
+#page3_box3_top{
+    width: 33.3vw;
+    height: 70vh;
+    transform: translateY(-100%);
+    transition: 0.3s linear;
+    position: relative;
+    background-color: white;
+    z-index: 1;
+}
+ #page3_box3_bottom{
+    width: 33.3vw;
+    height: 70vh;
+    transform: translateY(100%);
+    transition: 0.3s linear;
+    position: relative;
+    background-color: white;
+    z-index: 1;
+}
+
+/*--------------page3_box3_center-----------------*/
+
+#page3_box3_center{
+    width: 33.3vw;
+    height: 30vh;
+    z-index: 100;
+    top: 40%;
+    position: absolute;
+    padding-left: 1vw;
+    color: white;
+}
+#page3_box3_center>h1{
+    font-family: gilroy;
+    font-size: 2.2vmax;
+    font-weight: 400;    
+}
+#page3_box3_text1{
+    display: flex;
+    background-color: transparent;
+    justify-content:flex-start;
+    align-items: center;
+    gap: 2vw;
+    /* color: white; */
+}
+#page3_box3_text1>h3{
+    font-family: gilroy;
+    font-size: 1.3vw;
+    font-weight: 100;
+    width: 23vw;
+    background-color: transparent;
+    /* color: white; */
+}
+#page3_box3_text1>button{
+    width: 4vw;
+    height: 4vw;
+    border-radius: 50%;
+    outline: 0.2vw solid white;
+    background-color: transparent;
+}
+#page3_box3_text1>button>i{
+    font-size: 2vmax;
+    color: white;
+}
+
+
+/*-------------------------page4----------------------*/
+#page4{
+    width: 100vw;
+    height: 140vh;
+    display: flex;
+}
+
+/*--------------------------------box1-----------------------------*/
+#page4_box1{
+    width: 33.3vw;
+    height: 140vh;
+    overflow: hidden;
+    position: relative;
+    border-top: 0.1vw solid slategray;
+    border-right: 0.07vw solid rgb(103, 105, 107);
+    border-bottom: 0.1vw solid slategray;
+    background-color: black;
+    cursor: pointer;
+}
+#page4_box1_top{
+    width: 33.3vw;
+    height: 70vh;
+    transform: translateY(-100%);
+    transition: 0.3s linear;
+    position: relative;
+    background-color: white;
+    z-index: 1;
+}
+ #page4_box1_bottom{
+    width: 33.3vw;
+    height: 70vh;
+    transform: translateY(100%);
+    transition: 0.3s linear;
+    position: relative;
+    background-color: white;
+    z-index: 1;
+}
+
+/*--------------page4_box1_center-----------------*/
+
+#page4_box1_center{
+    width: 33.3vw;
+    height: 30vh;
+    z-index: 100;
+    top: 40%;
+    position: absolute;
+    padding-left: 1vw;
+    color: white;
+}
+#page4_box1_center>h1{
+    font-family: gilroy;
+    font-size: 2.2vmax;
+    font-weight: 400;    
+}
+#page4_box1_text1{
+    display: flex;
+    background-color: transparent;
+    justify-content:flex-start;
+    align-items: center;
+    gap: 2vw;
+    /* color: white; */
+}
+#page4_box1_text1>h3{
+    font-family: gilroy;
+    font-size: 1.3vw;
+    font-weight: 100;
+    width: 23vw;
+    background-color: transparent;
+    /* color: white; */
+}
+#page4_box1_text1>button{
+    width: 4vw;
+    height: 4vw;
+    border-radius: 50%;
+    outline: 0.2vw solid white;
+    background-color: transparent;
+}
+#page4_box1_text1>button>i{
+    font-size: 2vmax;
+    color: white;
+}
+
+/*--------------------------------box2-----------------------------*/
+#page4_box2{
+    width: 33.3vw;
+    height: 140vh;
+    overflow: hidden;
+    position: relative;
+    border-top: 0.1vw solid slategray;
+    border-right: 0.07vw solid rgb(103, 105, 107);
+    border-bottom: 0.1vw solid slategray;
+    background-color: black;
+    cursor: pointer;
+}
+#page4_box2_top{
+    width: 33.3vw;
+    height: 70vh;
+    transform: translateY(-100%);
+    transition: 0.3s linear;
+    position: relative;
+    background-color: white;
+    z-index: 1;
+}
+ #page4_box2_bottom{
+    width: 33.3vw;
+    height: 70vh;
+    transform: translateY(100%);
+    transition: 0.3s linear;
+    position: relative;
+    background-color: white;
+    z-index: 1;
+}
+
+
+/*--------------page4_box2_center-----------------*/
+
+#page4_box2_center{
+    width: 33.3vw;
+    height: 30vh;
+    z-index: 100;
+    top: 40%;
+    position: absolute;
+    padding-left: 1vw;
+    color: white;
+}
+#page4_box2_center>h1{
+    font-family: gilroy;
+    font-size: 2.2vmax;
+    font-weight: 400;    
+}
+#page4_box2_text1{
+    display: flex;
+    background-color: transparent;
+    justify-content:flex-start;
+    align-items: center;
+    gap: 2vw;
+    /* color: white; */
+}
+#page4_box2_text1>h3{
+    font-family: gilroy;
+    font-size: 1.3vw;
+    font-weight: 100;
+    width: 23vw;
+    background-color: transparent;
+    /* color: white; */
+}
+#page4_box2_text1>button{
+    width: 4vw;
+    height: 4vw;
+    border-radius: 50%;
+    outline: 0.2vw solid white;
+    background-color: transparent;
+}
+#page4_box2_text1>button>i{
+    font-size: 2vmax;
+    color: white;
+}
+
+
+
+/*--------------------------------box3-----------------------------*/
+#page4_box3{
+    width: 33.3vw;
+    height: 140vh;
+    overflow: hidden;
+    position: relative;
+    border-top: 0.1vw solid slategray;
+    border-right: 0.07vw solid rgb(103, 105, 107);
+    border-bottom: 0.1vw solid slategray;
+    background-color: black;
+    cursor: pointer;
+}
+#page4_box3_top{
+    width: 33.3vw;
+    height: 70vh;
+    transform: translateY(-100%);
+    transition: 0.3s linear;
+    position: relative;
+    background-color: white;
+    z-index: 1;
+}
+ #page4_box3_bottom{
+    width: 33.3vw;
+    height: 70vh;
+    transform: translateY(100%);
+    transition: 0.3s linear;
+    position: relative;
+    background-color: white;
+    z-index: 1;
+}
+
+
+/*--------------page4_box3_center-----------------*/
+
+#page4_box3_center{
+    width: 33.3vw;
+    height: 30vh;
+    z-index: 100;
+    top: 40%;
+    position: absolute;
+    padding-left: 1vw;
+    color: white;
+}
+#page4_box3_center>h1{
+    font-family: gilroy;
+    font-size: 2.2vmax;
+    font-weight: 400;    
+}
+#page4_box3_text1{
+    display: flex;
+    background-color: transparent;
+    justify-content:flex-start;
+    align-items: center;
+    gap: 2vw;
+    /* color: white; */
+}
+#page4_box3_text1>h3{
+    font-family: gilroy;
+    font-size: 1.3vw;
+    font-weight: 100;
+    width: 23vw;
+    background-color: transparent;
+    /* color: white; */
+}
+#page4_box3_text1>button{
+    width: 4vw;
+    height: 4vw;
+    border-radius: 50%;
+    outline: 0.2vw solid white;
+    background-color: transparent;
+}
+#page4_box3_text1>button>i{
+    font-size: 2vmax;
+    color: white;
+}
+
+
+/* -----------------------page5--------------------*/
+#page5{
+    width: 100vw;
+    height: 87vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+#page5_text{
+  width: 43vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 30vh;
+}
+
+#page5_text>h1{
+    font-family: 'Cardo', serif;
+    font-size: 6vmax;
+    color: white;
+}
+#page5_text>button{
+    margin-top: 0.6vw;
+    padding: 1vw 3.6vw;
+    font-family: gilroy;
+    font-size: 1.2vmax;
+    font-weight: 700;
+    border-radius: 5vw;
+    border: none;
+    cursor: pointer;
+    letter-spacing: 0.1vw;
+}
+
+
+/*------------------------page6--------------------------*/
+#page6{
+    width: 100vw;
+    height: 260vh;
+    background-color: black;
+    z-index: 1000;
+
+}
+
+/* -------box1---------- */
+#page6_box1{
+    width: 100vw;
+    height: 60vh;
+    overflow: hidden;
+    position: relative;
+    background-color: brown; 
+    position: sticky;
+    top: 13%;    
+}
+
+/*------------#page6_box1_nav---------*/
+
+
+#page6_box1_nav{
+    width: 100vw;
+    height: 10vh;
+    background-color: black;
+    display: flex;
+    gap: 1vw;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-top: 0.1vw solid silver;
+    position: sticky;
+    top: 0%;
+    
+}
+#page6_box1_nav>h1{
+    font-family: gilroy;
+    font-size: 2vw;
+    font-weight: 600;
+    color: white;
+}
+#page6_box1_nav>span{
+    font-family: gilroy;
+    font-size: 1.5vw;
+    font-weight: 600; 
+    color: white;
+}
+#page6_box1_nav>h2{
+    font-family: gilroy;
+    font-size: 1.6vw;
+    font-weight: 100; 
+    color: white;
+}
+
+#page6_box1_nav>button{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: none;
+    outline: 0.2vw solid white;
+    background-color: transparent;
+}
+#page6_box1_nav>button>i{
+   font-size: 1vmax;
+   color: white;
+}
+/* -----image1-----*/
+#page6_box1>img{
+    width: 100%;
+    height: 250%;
+}
+#page6_box1>h3{
+    position: absolute;
+    top: 30%;
+    left: 3%;
+    font-family: gilroy;
+    font-size: 2.5vw;
+    font-weight: 400;
+    color: white;
+}
+
+
+
+/* -------box2---------- */
+#page6_box2{
+    width: 100vw;
+    height: 60vh;
+    overflow: hidden;
+    position: relative;
+    background-color: brown;
+    position: sticky;
+    top: 23%;
+}
+
+/*------------#page6_box2_nav---------*/
+#page6_box2_nav{
+    width: 100vw;
+    height: 10vh;
+    background-color: black;
+    display: flex;
+    gap: 1vw;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-top: 0.1vw solid silver;
+    position: sticky;
+    top: 0%;
+}
+#page6_box2_nav>h1{
+    font-family: gilroy;
+    font-size: 2vw;
+    font-weight: 600;
+    color: white;
+}
+#page6_box2_nav>span{
+    font-family: gilroy;
+    font-size: 1.5vw;
+    font-weight: 600; 
+    color: white;
+}
+#page6_box2_nav>h2{
+    font-family: gilroy;
+    font-size: 1.6vw;
+    font-weight: 100; 
+    color: white;
+}
+
+#page6_box2_nav>button{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: none;
+    outline: 0.2vw solid white;
+    background-color: transparent;
+}
+#page6_box2_nav>button>i{
+   font-size: 1vmax;
+   color: white;
+}
+/* -----image2-----*/
+#page6_box2>img{
+    width: 100%;
+    height: 250%;
+}
+#page6_box2>h3{
+    position: absolute;
+    top: 30%;
+    left: 3%;
+    font-family: gilroy;
+    font-size: 2.5vw;
+    font-weight: 400;
+    color: white;
+}
+
+
+
+/* -------box3---------- */
+#page6_box3{
+    width: 100vw;
+    height: 60vh;
+    overflow: hidden;
+    position: relative;
+    background-color: brown;
+    position: sticky;
+    top: 32.8%;
+}
+
+/*------------#page6_box3_nav---------*/
+#page6_box3_nav{
+    width: 100vw;
+    height: 10vh;
+    background-color: black;
+    display: flex;
+    gap: 1vw;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-top: 0.1vw solid silver;
+    position: sticky;
+    top: 0%;
+}
+#page6_box3_nav>h1{
+    font-family: gilroy;
+    font-size: 2vw;
+    font-weight: 600;
+    color: white;
+}
+#page6_box3_nav>span{
+    font-family: gilroy;
+    font-size: 1.5vw;
+    font-weight: 600; 
+    color: white;
+}
+#page6_box3_nav>h2{
+    font-family: gilroy;
+    font-size: 1.6vw;
+    font-weight: 100; 
+    color: white;
+}
+
+#page6_box3_nav>button{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: none;
+    outline: 0.2vw solid white;
+    background-color: transparent;
+}
+#page6_box3_nav>button>i{
+   font-size: 1vmax;
+   color: white;
+}
+/* -----image3-----*/
+#page6_box3>img{
+    width: 100%;
+    height: 250%;
+}
+#page6_box3>h3{
+    position: absolute;
+    top: 30%;
+    left: 3%;
+    font-family: gilroy;
+    font-size: 2.5vw;
+    font-weight: 400;
+    color: white;
+}
+
+
+/* -------box4---------- */
+#page6_box4{
+    width: 100vw;
+    height: 80vh;
+    overflow: hidden;
+    position: relative;
+    background-color: brown;
+    position: sticky;
+    top: 0%;
+}
+
+/*------------#page6_box4_nav---------*/
+#page6_box4_nav{
+    width: 100vw;
+    height: 10vh;
+    background-color: black;
+    display: flex;
+    gap: 1vw;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-top: 0.1vw solid silver;
+    position: sticky;
+    top: 0%;
+}
+#page6_box4_nav>h1{
+    font-family: gilroy;
+    font-size: 2vw;
+    font-weight: 600;
+    color: white;
+}
+#page6_box4_nav>span{
+    font-family: gilroy;
+    font-size: 1.5vw;
+    font-weight: 600; 
+    color: white;
+}
+#page6_box4_nav>h2{
+    font-family: gilroy;
+    font-size: 1.6vw;
+    font-weight: 100; 
+    color: white;
+}
+
+#page6_box4_nav>button{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: none;
+    outline: 0.2vw solid white;
+    background-color: transparent;
+}
+#page6_box4_nav>button>i{
+   font-size: 1vmax;
+   color: white;
+}
+/* -----image4-----*/
+#page6_box4>img{
+    width: 100%;
+    height: 250%;
+}
+#page6_box4>h3{
+    position: absolute;
+    top: 30%;
+    left: 3%;
+    font-family: gilroy;
+    font-size: 2.5vw;
+    font-weight: 400;
+    color: white;
+}
+
+/*-----------------------------page7----------------------*/
+.swiper {
+    width: 100vw;
+    height: 100vh;
+    background-color:black;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    /* background-color: #333333; */
+    background-color: black;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 40%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .swiper-slide11{
+    width: 80vw;
+    height: 50vh;
+    padding: 2vw 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333333;
+  }
+  .swiper-slide11_text{
+    width: 60vw;
+    height: 40vh;
+    padding: 2vw 7vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    background-color: #333333;
+   
+   
+  }
+
+  .swiper-slide11_text>h1{
+    width: 35vw;
+    font-family: gilroy;
+    font-size: 1.4vmax;
+    font-weight: 600;
+    color: white;
+    text-align: start;
+  }
+  .swiper-slide11_text>h2{
+    font-family: gilroy;
+    font-size: 2vmax;
+    font-weight: 400;
+    color: white;
+    margin-top: 4vw; 
+  }
+  .swiper-slide11_text>h3{
+    font-family: gilroy;
+    font-size: 1.1vmax;
+    font-weight: 400;
+    color: silver;
+    margin-left: 1vw;
+    margin-top: 0.2vw;
+   
+  }
+
+  /*-----------------------------page8------------------------------*/
+  #page8{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color:black;
+    position: relative;
+  }
+  
+
+  /*---------------#page8_box1---------------*/
+#page8_box1{
+    width: 100vw;
+    height: 20vh;
+    background-color: black;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    position: absolute;
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+}
+#page8_box1::-webkit-scrollbar{
+    display: none;
+}
+#page8_box1 img{
+    width: 100%;
+    animation: open 20s linear infinite both;
+}
+
+@keyframes open {
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(100%);
+    }
+}
+
+
+  /*---------------#page8_box2---------------*/
+#page8_box2{
+    width: 100vw;
+    height: 25vh;
+    background-color: black;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    position: absolute;
+    white-space: nowrap;
+    display: flex;
+    top: 20%;
+    justify-content: center;
+    align-items: center;
+ 
+}
+#page8_box2::-webkit-scrollbar{
+    display: none;
+}
+#page8_box2 img{
+    width: 100%;
+    animation: border 10s linear infinite both;
+}
+
+@keyframes border {
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(100%);
+    }
+}
+
+  /*---------------#page8_box3---------------*/
+  #page8_box3{
+    width: 100vw;
+    height: 20vh;
+    background-color: black;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    position: absolute;
+    white-space: nowrap;
+    display: flex;
+    top: 45%;
+    justify-content: center;
+    align-items: center;
+ 
+}
+#page8_box3::-webkit-scrollbar{
+    display: none;
+}
+#page8_box3 img{
+    width: 100%;
+    animation: infinite 20s linear infinite both;
+}
+
+@keyframes infinite {
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(100%);
+    }
+}
+
+/*------------------------page9-----------------------*/
+#page9{
+    width: 100vw;
+    height: 190vh;
+    background-color:black;
+    color: white;
+}
+#page9_box1{
+    width: 100vw;
+    height: 50vh;
+    background-color:black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+#page9_box1>h1{
+    font-size: 5.5vmax;
+    font-weight: 700;
+    font-family: gilroy;
+}
+#page9_box1>h1>span{
+    font-size: 5.5vmax;
+    font-weight: 700;
+    font-family: cursive;
+}
+#page9_box1>h2{
+    width: 30vmax;
+    text-align: center;
+    font-family: gilroy;
+    margin-top: 2vw;
+    font-size: 1.5vmax;
+
+}
+
+
+
+/* --------------------page9_box2------------------- */
+
+#page9_box2{
+    width: 100vw;
+    height: 70vh;
+    background-color: black;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+/* ------left----- */
+#page9_box2_left{
+    width: 34vw;
+    height: 70vh;
+    padding: 0vw 0 0 5vw;
+    /* color: white; */
+    background-color: black;
+}
+#page9_box2_left>span{
+    font-size: 7vw;
+    font-family: 'Cardo', serif;
+    font-weight: 700;
+    line-height: 6vw;
+}
+#page9_box2_left>h1{
+    font-family: gilroy;
+    font-size: 2.5vmax;
+}
+#page9_box2_left>h3{
+    margin-top: 0.5vw;
+    font-family: gilroy;
+    font-size: 1.6vmax;
+    font-weight: 100;
+    width: 23vw;
+}
+
+
+/* ------right----- */
+#page9_box2_right{
+    width: 50vw;
+    height: 70vh;
+    /* color: white; */
+    background-color: black;
+}
+#page9_box2_right>span{
+    font-size: 7vw;
+    font-family: 'Cardo', serif;
+    font-weight: 700;
+    line-height: 6vw;
+}
+#page9_box2_right>h1{
+    font-family: gilroy;
+    font-size: 2.5vmax;
+}
+#page9_box2_right>h3{
+    margin-top: 0.5vw;
+    font-family: gilroy;
+    font-size: 1.6vmax;
+    font-weight: 100;
+    width: 23vw;
+}
+
+
+/* --------------------page9_box3------------------- */
+
+#page9_box3{
+    width: 100vw;
+    height: 70vh;
+    background-color: black;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+/* ------left----- */
+#page9_box3_left{
+    width: 70vw;
+    height: 70vh;
+    padding: 0vw 0 0 40vw;
+    /* color: white; */
+    background-color: black;
+}
+#page9_box3_left>span{
+    font-size: 7vw;
+    font-family: 'Cardo', serif;
+    font-weight: 700;
+    line-height: 6vw;
+}
+#page9_box3_left>h1{
+    font-family: gilroy;
+    font-size: 2.5vmax;
+}
+#page9_box3_left>h3{
+    margin-top: 0.5vw;
+    font-family: gilroy;
+    font-size: 1.6vmax;
+    font-weight: 100;
+    width: 23vw;
+}
+
+
+/* ------right----- */
+#page9_box3_right{
+    width: 30vw;
+    height: 70vh;
+    color: white;
+    background-color: black;
+}
+#page9_box3_right>span{
+    font-size: 7vw;
+    font-family: 'Cardo', serif;
+    font-weight: 700;
+    line-height: 6vw;
+}
+#page9_box3_right>h1{
+    font-family: gilroy;
+    font-size: 2.5vmax;
+}
+#page9_box3_right>h3{
+    margin-top: 0.5vw;
+    font-family: gilroy;
+    font-size: 1.6vmax;
+    font-weight: 100;
+    width: 23vw;
+}
+
+/*--------------------page10--------------------------*/
+#page10{
+    width: 100vw;
+    height: 500vh;
+    background-color: black;
+    display: flex;
+    gap: 0.1vw;
+   
+}
+
+#page10_left{
+    width: 50vw;
+    height: 60vh;
+    margin-top: 6vw;
+    padding: 0 0 0 5vw;
+    background-color: black;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: sticky;
+    top: 10%;
+    border-radius: 5vw;
+}
+#page10_left>h1{
+    font-weight: gilroy;
+    font-weight: 700;
+    font-size: 6vmax;
+    width: 40vw;
+    margin-top: 4vw;
+    color: white;
+    /* background-color: brown; */
+    position: sticky;
+    top: 0%;
+}
+
+/*----------------page10_right------------------*/
+#page10_right{
+    width: 50vw;
+    height: 500vh;
+    padding-top: 5vw;
+    background-color: black;
+}
+
+/*-------box1--------*/
+#page10_right_box1{
+    width: 45vw;
+    height: 70vh;
+    border-radius: 2vw;
+    background-color: black;
+    border: none;
+    outline: 0.1vw solid silver;
+    padding: 3vw 1vw 1vw 1vw;
+    color: white;
+}
+#page10_right_box1>h1{
+    font-size: 1.6vw;
+    font-family: gilroy;
+    font-weight: 500;
+    margin-left: 2vw;
+}
+#page10_right_box1>h2{
+    font-size: 1.7vw;
+    font-family: gilroy;
+    font-style: italic;
+    font-weight: 500;
+    margin-left: 2vw;
+    margin-top: 0.2vw;
+    color: silver;
+}
+#page10_right_box1>img{
+    width: 43vw;
+    border-radius: 2vw;
+    margin-top: 3vw;
+}
+
+/*---------------box2-----------------*/
+#page10_right_box2{
+    width: 45vw;
+    height: 70vh;
+    border-radius: 2vw;
+    background-color: black;
+    border: none;
+    outline: 0.1vw solid silver;
+    padding: 3vw 1vw 1vw 1vw;
+    color: white;
+    margin-top: 5vw;
+}
+#page10_right_box2>h1{
+    font-size: 1.6vw;
+    font-family: gilroy;
+    font-weight: 500;
+    margin-left: 2vw;
+}
+#page10_right_box2>h2{
+    font-size: 1.7vw;
+    font-family: gilroy;
+    font-style: italic;
+    font-weight: 500;
+    margin-left: 2vw;
+    margin-top: 0.2vw;
+    color: silver;
+}
+#page10_right_box2>img{
+    width: 43vw;
+    border-radius: 2vw;
+    margin-top: 3vw;
+}
+
+
+/*---------------box3-----------------*/
+#page10_right_box3{
+    width: 45vw;
+    height: 70vh;
+    border-radius: 2vw;
+    background-color: black;
+    border: none;
+    outline: 0.1vw solid silver;
+    padding: 3vw 1vw 1vw 1vw;
+    color: white;
+    margin-top: 5vw;
+}
+#page10_right_box3>h1{
+    font-size: 1.6vw;
+    font-family: gilroy;
+    font-weight: 500;
+    margin-left: 2vw;
+}
+#page10_right_box3>h2{
+    font-size: 1.7vw;
+    font-family: gilroy;
+    font-style: italic;
+    font-weight: 500;
+    margin-left: 2vw;
+    margin-top: 0.2vw;
+    color: silver;
+}
+#page10_right_box3>img{
+    width: 43vw;
+    border-radius: 2vw;
+    margin-top: 3vw;
+}
+
+
+/*---------------box4-----------------*/
+#page10_right_box4{
+    width: 45vw;
+    height: 70vh;
+    border-radius: 2vw;
+    background-color: black;
+    border: none;
+    outline: 0.1vw solid silver;
+    padding: 3vw 1vw 1vw 1vw;
+    color: white;
+    margin-top: 5vw;
+}
+#page10_right_box4>h1{
+    font-size: 1.6vw;
+    font-family: gilroy;
+    font-weight: 500;
+    margin-left: 2vw;
+}
+#page10_right_box4>h2{
+    font-size: 1.7vw;
+    font-family: gilroy;
+    font-style: italic;
+    font-weight: 500;
+    margin-left: 2vw;
+    margin-top: 0.2vw;
+    color: silver;
+}
+#page10_right_box4>img{
+    width: 43vw;
+    border-radius: 2vw;
+    margin-top: 3vw;
+}
+
+
+/*---------------box5-----------------*/
+#page10_right_box5{
+    width: 45vw;
+    height: 70vh;
+    border-radius: 2vw;
+    background-color: black;
+    border: none;
+    outline: 0.1vw solid silver;
+    padding: 3vw 1vw 1vw 1vw;
+    color: white;
+    margin-top: 5vw;
+}
+#page10_right_box5>h1{
+    font-size: 1.6vw;
+    font-family: gilroy;
+    font-weight: 500;
+    margin-left: 2vw;
+}
+#page10_right_box5>h2{
+    font-size: 1.7vw;
+    font-family: gilroy;
+    font-style: italic;
+    font-weight: 500;
+    margin-left: 2vw;
+    margin-top: 0.2vw;
+    color: silver;
+}
+#page10_right_box5>img{
+    width: 43vw;
+    border-radius: 2vw;
+    margin-top: 3vw;
+}
+
+
+/*---------------box6-----------------*/
+#page10_right_box6{
+    width: 45vw;
+    height: 70vh;
+    border-radius: 2vw;
+    background-color: black;
+    border: none;
+    outline: 0.1vw solid silver;
+    padding: 3vw 1vw 1vw 1vw;
+    color: white;
+    margin-top: 5vw;
+}
+#page10_right_box6>h1{
+    font-size: 1.6vw;
+    font-family: gilroy;
+    font-weight: 500;
+    margin-left: 2vw;
+}
+#page10_right_box6>h2{
+    font-size: 1.7vw;
+    font-family: gilroy;
+    font-style: italic;
+    font-weight: 500;
+    margin-left: 2vw;
+    margin-top: 0.2vw;
+    color: silver;
+}
+#page10_right_box6>img{
+    width: 43vw;
+    border-radius: 2vw;
+    margin-top: 3vw;
+}
+
+/*--------------------page11--------------*/
+#page11{
+    width: 100vw;
+    height: 318vh;
+    background-color: black;
+    padding-top: 20vw;
+    display: flex;
+    gap: 1vw;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#page11_cercle{
+    width: 99vw;
+    height: 200vh;
+    border-radius: 50%;
+    border: none;
+    background-color: black;
+    outline: 0.1vw solid silver;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#page11_cercle_box1{
+    width: 90vw;
+    height: 180vh;
+    background-color: black;
+    border-radius: 50%;
+   display: flex;
+   justify-content: baseline;
+   align-items: center;
+   flex-direction: column;
+    padding: 10vw 0 0 0;
+    color: white;
+   
+}
+#page11_cercle_box1>h1{
+    font-family: gilroy;
+    font-size: 3.5vw;
+}
+#page11_cercle_box1>h2{
+    font-family: gilroy;
+    font-size: 2vw;
+    margin-top: 1.5vw;
+    font-weight: 200;
+}
+
+/* -------------#button44------------ */
+#button44{
+    width: 63vw;
+    /* background-color: aqua; */
+    margin-top: 3vw;
+   font-family: gilroy; 
+   display: flex;
+   color: white;
+   margin-bottom: 1vw;
+   justify-content: space-evenly;
+}
+
+#but100{
+    padding: 0.8vw 2.1vw;
+    font-size: 1.1vw;
+    font-weight: 600;
+    border-radius: 5vw;
+    border: none;
+    color: white;
+    cursor: pointer;
+    background-color: transparent;
+    outline: 0.2vw solid white; 
+}
+#but101{
+    padding: 0.8vw 2.1vw;
+    font-size: 1.1vw;
+    font-weight: 600;
+    border-radius: 5vw;
+    border: none;
+    outline: 0.2vw solid white; 
+    color: white;
+    cursor: pointer;
+    background-color: transparent;
+}
+#but102{
+    padding: 0.8vw 2.1vw;
+    font-size: 1.1vw;
+    font-weight: 600;
+    border-radius: 5vw;
+    border: none;
+    outline: 0.2vw solid white; 
+    color: white;
+    cursor: pointer;
+    background-color: transparent;
+}
+#but103{
+    padding: 0.8vw 2.1vw;
+    font-size: 1.1vw;
+    font-weight: 600;
+    border-radius: 5vw;
+    border: none;
+    outline: 0.2vw solid white; 
+    color: white;
+    cursor: pointer;
+    background-color: transparent;
+}
+#but104{
+    padding: 0.8vw 2.1vw;
+    font-size: 1.1vw;
+    font-weight: 600;
+    border-radius: 5vw;
+    border: none;
+    outline: 0.2vw solid white; 
+    color: white;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+
+/* -------------buttion55----------- */
+#buttion55{
+    width: 40vw;
+    margin-top: 3vw;
+    margin-bottom: 1vw;
+    display: flex;
+    color: white;
+    justify-content: space-evenly;
+    /* background-color: aquamarine; */
+}
+#but105{
+    padding: 0.8vw 2.1vw;
+    font-size: 1.1vw;
+    font-weight: 600;
+    border-radius: 5vw;
+    border: none;
+    outline: 0.2vw solid white;
+    color: white;
+    cursor: pointer;
+    background-color: transparent; 
+}
+#but106{
+    padding: 0.8vw 2.1vw;
+    font-size: 1.1vw;
+    font-weight: 600;
+    border-radius: 5vw;
+    border: none;
+    outline: 0.2vw solid white; 
+    color: white;
+    cursor: pointer;
+    background-color: transparent;
+}
+#but107{
+    padding: 0.8vw 2.1vw;
+    font-size: 1.1vw;
+    font-weight: 600;
+    border-radius: 5vw;
+    border: none;
+    outline: 0.2vw solid white;
+    color: white;
+    cursor: pointer;
+    background-color: transparent; 
+}
+#but108{
+    padding: 0.8vw 2.1vw;
+    font-size: 1.1vw;
+    font-weight: 600;
+    border-radius: 5vw;
+    border: none;
+    outline: 0.2vw solid white; 
+    color: white;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+/*-----------------button66---------------*/
+#button66{
+    width: 40vw;
+    margin-top: 3vw;
+    display: flex;
+    color: white;
+    justify-content: space-evenly;
+    /* background-color: aquamarine; */
+}
+#but109{
+    padding: 0.8vw 2.1vw;
+    font-size: 1.1vw;
+    font-weight: 600;
+    border-radius: 5vw;
+    border: none;
+    outline: 0.2vw solid white; 
+    color: white;
+    cursor: pointer;
+    background-color: transparent; 
+}
+#but110{
+    padding: 0.8vw 2.1vw;
+    font-size: 1.1vw;
+    font-weight: 600;
+    border-radius: 5vw;
+    border: none;
+    outline: 0.2vw solid white;  
+    color: white;
+    cursor: pointer;
+    background-color: transparent;
+}
+#but111{
+    padding: 0.8vw 2.1vw;
+    font-size: 1.1vw;
+    font-weight: 600;
+    border-radius: 5vw;
+    border: none;
+    outline: 0.2vw solid white; 
+    color: white;
+    cursor: pointer;
+    background-color: transparent; 
+}
+#but112{
+    padding: 0.8vw 2.1vw;
+    font-size: 1.1vw;
+    font-weight: 600;
+    border-radius: 5vw;
+    border: none;
+    outline: 0.2vw solid white;  
+    color: white;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+/*--------------button77------------*/
+#button77{
+    width: 40vw;
+    height: 53vh;
+    margin-top: 3vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: aquamarine; */
+    color: white;
+}
+#but113{
+    padding: 0.8vw 13.5vw;
+    font-size: 1.1vw;
+    font-weight: 600;
+    border-radius: 5vw;
+    border: none;
+    outline: 0.2vw solid white;  
+    color: white;
+    cursor: pointer;
+    background-color: transparent;
+}
+#but114{
+    padding: 0.8vw 12.2vw;
+    font-size: 1.1vw;
+    font-weight: 600;
+    border-radius: 5vw;
+    border: none;
+    outline: 0.2vw solid white;  
+    color: white;
+    cursor: pointer;
+    background-color: transparent;
+}
+#but115{
+    padding: 3.5vw 12.2vw;
+    font-size: 1.1vw;
+    font-weight: 600;
+    border: none;
+    outline: 0.2vw solid white; 
+    color: white;
+    cursor: pointer;
+    background-color: transparent; 
+}
+#but116{
+    padding: 0.8vw 3.5vw;
+    font-size: 1.1vw;
+    font-weight: 600;
+    border-radius: 5vw;
+    border: none;
+    color: white;
+    cursor: pointer;
+    background-color: #1C6BFF;
+}
+
+/*-----------------------footer----------------------*/
+#footer{
+    width: 100vw;
+    height: 74vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#footer_box{
+    width: 43vw;
+    height: 40vh;
+    display: flex;
+    margin-top: 1vw;
+    color: white;
+    justify-content: space-between;
+    /* background-color: tomato; */
+}
+
+/*---------list1-----------*/
+#footer_list1>h1{
+  font-family: gilroy;
+  font-size: 1.4vmax;
+}
+#footer_list1>ul{
+   margin-top: 1.2vw;
+   list-style: none;
+}
+#footer_list1>ul>li{
+    margin-top: 0.5vw;
+    font-family: gilroy;
+    font-size: 1.4vw;
+    cursor: pointer;
+ }
+
+ 
+/*---------list2-----------*/
+#footer_list2>h1{
+    font-family: gilroy;
+    font-size: 1.4vmax;
+  }
+  #footer_list2>ul{
+     margin-top: 1.2vw;
+     list-style: none;
+  }
+  #footer_list2>ul>li{
+      margin-top: 0.5vw;
+      font-family: gilroy;
+      font-size: 1.4vw;
+      cursor: pointer;
+   }
+
+ 
+/*---------list3-----------*/
+#footer_list3>h1{
+    font-family: gilroy;
+    font-size: 1.4vmax;
+  }
+  #footer_list3>ul{
+     margin-top: 1.2vw;
+     list-style: none;
+  }
+  #footer_list3>ul>li{
+      margin-top: 0.5vw;
+      font-family: gilroy;
+      font-size: 1.4vw;
+      cursor: pointer;
+   }  
+  
+   /*-----------------ZORRO_DESIGN--------------*/
+   #ZORRO_DESIGN{
+    font-family: gilroy;
+    font-size: 1.2vw;
+    font-weight: 100;
+    color: white;
+    cursor: pointer;
+   }
+
+
+   /*-----------------menubar_list-------------*/
+   #menubar_list{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    position: absolute;
+    position: fixed;
+    top: 0%;
+    right: -100%;
+    z-index: 11000;
+    
+   }
+   #menubar_list>img{
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    width: 50px;
+    height: 50px;
+    font-size: 1vw;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: white;
+
+   }
+   #menubar_list_box1{
+    width: 20vw;
+    height: 70vh;
+    margin-top: 10vw;
+    margin-left: 15vw;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+   }
+   #menubar_list_box1 h1{
+    font-family: gilroy;
+    font-size: 2vw;
+    transition: 0.3s linear;
+    color: white;
+   }
+   #menubar_list_box1>h1:hover{
+    color: red;
+    cursor: pointer;
+   }
+
+   #menubar_list_box2{
+    margin-top: -10vw;
+    margin-left: 60vw;
+    font-family: gilroy;
+    font-size: 1vw;
+    cursor: pointer;
+    color: white;
+   }
